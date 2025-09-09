@@ -1,7 +1,5 @@
----
 - name: Install Apache Web Server
   hosts: localhost
-  become: yes
   tasks:
     - name: Install httpd package
       ansible.builtin.yum:
@@ -13,3 +11,4 @@
         name: httpd
         state: started
         enabled: yes
+
